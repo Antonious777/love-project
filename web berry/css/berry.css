@@ -1,0 +1,175 @@
+body {
+    background-color: violet;
+    background-image: url(../pic.jpg);
+background-repeat: repeat;
+background-size: 800px;
+}
+
+
+
+
+/* Styles for img within the .p1 class */
+
+
+.p1 {
+    margin-left: 50px;
+    text-align: center;
+    color: yellow;
+}
+
+.p1 img {
+    border-top-left-radius: 100%;
+    border-bottom-left-radius: 100%;
+    border-bottom-right-radius: 100%;
+    padding-left: 70px;
+    width: 400px;
+    height: 300px;
+    transition: width 3s linear, height 3s linear, background-color 3s linear, border 3s linear;
+    /* Add delay only to return to original state */
+    transition-delay: 5s;
+}
+
+.p1 img:hover {
+    width: 400px;
+    height: 400px;
+    background-color: rgb(255, 0, 157);
+    border-left: 20px solid rgb(255, 0, 157);
+    border-top: 20px solid rgb(255, 0, 157);
+    border-right: 20px solid rgb(255, 0, 157);
+    border-bottom: 20px solid rgb(255, 0, 157);
+    transition-delay: 0s; /* No delay when transitioning to the hover state */
+    box-shadow: 0px 0px 100px 0px rgb(195, 3, 70);
+}
+
+      /* p2 */
+      .p2 {
+        margin-left: 50px;
+        text-align: center;
+        color: yellow;
+    }
+    
+    .p2 img {
+        border-top-left-radius: 10%;
+        border-top-right-radius: 10%;
+        border-bottom-left-radius: 10%;
+        border-bottom-right-radius: 10%;
+        padding-left: 70px;
+        width: 500px;
+        height: 400px;
+        transition: width 3s linear, height 3s linear, background-color 3s linear, border 3s linear;
+        /* Add delay only to return to original state */
+        transition-delay: 5s;
+    }
+    
+    .p2 img:hover {
+        width: 400px;
+        height: 400px;
+        background-color: yellow;
+        border-left: 20px solid rgb(255, 0, 157);
+        border-top: 20px solid rgb(255, 0, 157);
+        border-right: 20px solid rgb(255, 0, 157);
+        border-bottom: 20px solid rgb(255, 0, 157);
+        transition-delay: 0s; /* No delay when transitioning to the hover state */
+        box-shadow: 0px 0px 100px 0px yellow;
+    }
+    
+
+
+       /* p3 */
+      /* p3 container */
+.p3 {
+    margin-left: 50px;
+    text-align: center;
+    color:aqua
+}
+
+/* Heart-shaped image */
+.p3 img {
+    position: relative;
+    width: 550px; /* Adjusted width to balance the shape */
+    height: 550px; /* Adjusted height for the heart */
+    background-color: aquamarine;
+    border-radius: 50% 50% 0 0; /* Half circle at top */
+    transition: width 3s linear, height 3s linear, background-color 3s linear, border 3s linear;
+    transition-delay: 5s; /* Delay only on return to the original state */
+}
+
+/* Add "lobes" of the heart */
+.p3 img::before, .p3 img::after {
+    content: "";
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%; /* Round top */
+    background-color: blue;
+    top: 0;
+}
+
+/* Position left and right lobes */
+.p3 img::before {
+    left: -125px;
+}
+.p3 img::after {
+    right: -125px;
+}
+
+/* Hover state */
+.p3 img:hover {
+    width: 400px;
+    height: 400px;
+    background-color: rgb(0, 191, 255);
+    border-left: 20px solid rgb(0, 17, 255);
+    border-top: 20px solid rgb(46, 155, 250);
+    border-right: 20px solid rgb(0, 248, 199);
+    border-bottom: 20px solid rgb(0, 248, 199);
+    box-shadow: 0px 0px 100px 0px aquamarine;
+    transition-delay: 0s; /* No delay when transitioning to hover state */
+}
+
+    
+       /* p4 */
+     /* Container for the heart-shaped image */
+     .p4 {
+        margin-left: 50px;
+        text-align: center;
+        color: yellow;
+    }
+    
+    .p4 img {
+        width: 800px; /* Set to a very large width */
+        height: 800px; /* Set to a very large height */
+        clip-path: path('M 400 0 Q 640 0 640 240 Q 640 480 400 800 Q 160 480 160 240 Q 160 0 400 0 Z');
+        /* Adjusted clip-path for a larger heart shape */
+        object-fit: cover; /* Ensures the image covers the heart shape */
+    }
+    
+    
+    
+    
+    
+    h2{
+        overflow: auto;
+        max-width: 150px;
+        max-height: 150px;
+        position: absolute;
+        margin-left: 60%;
+      
+        margin-top: 100px;
+        margin-bottom: 600px;
+        padding: 150px ;
+        color: rgb(174, 215, 9);
+        background-color: rgb(87, 149, 194);
+        border-radius: 500px;
+        text-shadow: -5px 1px 1px rgb(172, 12, 150);
+    box-shadow: 0px 0px 100px 0px lightgreen;
+     
+      /* WebKit-based browsers */
+   
+
+      /* Firefox */
+      scrollbar-width:100px;
+      scrollbar-color: lightgreen rgb(81, 7, 191);
+
+
+
+   }
